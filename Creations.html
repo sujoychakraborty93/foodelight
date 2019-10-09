@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+<!-- Add icon library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<!-- Font family CSS-->
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Krona+One" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet" type="text/css">
+  
+  <title>Nivedita Banerjee</title>
+
+<!-- JQuery color plugin-->
+	<script src="http://code.jquery.com/color/jquery.color-2.1.2.min.js" integrity="sha256-H28SdxWrZ387Ldn0qogCzFiUDDxfPiNIyJX7BECQkDE=" crossorigin="anonymous"></script>
+<!-- AJAX plugin-->  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="contain">
+			<div id="creationsDiv">
+				<div id="menubar">
+					<ul id="topul" class="text-center">
+						<li class="topli">
+							<a class="toplibtn" href="Index.html">Home</a>
+						</li>
+						<li class="topli">
+							<a class="toplibtn" href="Kitchen.html">Kitchen</a>
+						</li>
+						<li class="topli">
+							<a class="toplibtn" href="Creations.html">Creations</a>
+						</li>
+						<li class="topli">
+							<a class="toplibtn" href="About.html">About Me</a>
+						</li>
+						<li class="topli">
+							<a class="toplibtn" href="Index.html#contactDiv">Contact</a>
+						</li>
+					</ul>
+				</div>
+				<div class="creationsHeader">
+					"Art is the reflection of he'art'"
+				</div>
+			</div>
+		</div>
+
+		
+<!--=========================	Radial ======================================================-->			
+
+		<div class="itemHolder" id="radialID">
+			<div class="itemPicFrame">
+				<div class="itemPicHolder">
+					<div class="itemPicBox">
+						<div class="itemPic" id="radial"></div>
+					</div>
+				</div>
+			</div>
+			<div class="itemDetails">
+				<div class="itemHeader">
+					Radial
+				</div>
+				<div class="itemDescription">
+					<div class="itemDescArticle">
+						Outward enlightenment of innerself. 
+					</div>
+				</div>
+			</div>
+		</div>
+			
+		<div class="clear"></div>
+
+<!--=========================	Dark Shelter ======================================================-->		
+		<div class="itemHolder" id="darkShelterId">
+			<div class="itemPicFrame">
+				<div class="itemPicHolder">
+					<div class="itemPicBox">
+						<div class="itemPic" id="darkShelter"></div>
+					</div>
+				</div>
+			</div>
+			<div class="itemDetails">
+				<div class="itemHeader">
+					Dark Shelter
+				</div>
+				
+				<div class="itemDescription">
+					<div class="itemDescArticle">
+						The dark self that lies within. 
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="clear"></div>
+		
+	</div>
+  
+  <script>
+	
+	var h = $( window ).height();
+	var w = $( window ).width();
+	
+// total height - height of menubar
+	var viewheight = (h * 0.80);
+	
+	
+/*set height of all relevant DIVs for first time*/
+	$(".contain").css({"max-width": w, "max-height": h});
+	$("#kitchenDiv").css("height", h );
+	$("#kitchDiv").css({"height": h, "width": w }); 
+	$("#contactDiv").css("height", h ); 
+	$(".sectionWrap").css("height", h );
+	$(".kitchenWrap").css("height", h );
+	$("#kitchenDiv").animate({height: '+=80px', width: '+=40px'}, 5000);
+	
+	
+//	$(".pageWrap").css("height", h );
+//set height of the holder less than height of total view area
+	$(".itemHolder").css("height", viewheight );
+
+
+//	hover over function on Sujoy's Social Media Icons
+	$(".sujoySocialIcon").hover(function(){
+    $(this).addClass("sujoySocialIconHover");
+    }, function(){
+    $(this).removeClass("sujoySocialIconHover");
+	});
+	
+//===========================================================================================================	
+// function to add padding of 80px to an element (itemHolder) when linked/clicked from Kitchen element item
+// The function actually applying the offset
+	function offsetAnchor() {
+		if(location.hash.length !== 0) {
+			window.scrollTo(window.scrollX, window.scrollY - 80);
+		} 
+	}
+
+// This will capture hash changes while on the page
+	window.addEventListener("hashchange", offsetAnchor);
+
+// This is here so that when you enter the page with a hash,
+// it can provide the offset in that case too. Having a timeout
+// seems necessary to allow the browser to jump to the anchor first.
+	window.setTimeout(offsetAnchor, 0.001);
+// ============================================================================================================	
+	
+	
+//hover over function for dishDisplay section. 
+//NOT USED because Animation added via CSS. Look for ".dishesBox a:hover .dishDisplayPic"
+/*
+	$(".dishesBox a").hover(function(){
+    $(this).find(".dishDisplayPic").animate({height: '+=10px', width: '+=10px'}, 1000);
+    }, function(){
+    $(this).find(".dishDisplayPic").animate({height: '-=10px', width: '-=10px'}, 1000);
+	});
+*/	
+
+/*
+	$(".dishDisplayPic").hover(function(){
+    $(this).animate({height: '+=10px', width: '+=10px'}, 1000);
+    }, function(){
+    $(this).animate({height: '-=10px', width: '-=10px'}, 1000);
+	});
+*/
+	
+/*hover over function on Sujoy's Social Media Icons*/
+/*	
+	$(".shareIconClass").hover(function(){
+    $(".shareSocialIcon").slideDown("slow");
+    }, function(){
+    $(".shareSocialIcon").slideUp("slow");
+	});
+
+*/
+/* hover over function on Sujoy's Social Media Icons*/
+/*
+	$(".shareIconClass").hover(function(){
+    $(this).animate({'background-color': '#D3E1FA'}, 'slow');
+    }, function(){
+    $(this).animate({'background-color': '#F4F4F4'}, 'slow');
+	});
+*/
+/* hover over function on Sujoy's Social Media Icons*/
+/*	
+	$(".shareIconClass").hover(function(){
+    $(this).css({"background-color": "black", "color": "white", "text-decoration": "none"}, 2000);
+    }, function(){
+    $(this).css({"background-color": "white", "color": "black", "text-decoration": "none"}, 2000);
+	});
+*/
+
+/*	
+	    if (x > 100) {
+      window.scrollBy(0, h);
+    };
+	if (x < 100) {
+      window.scrollBy(0, -h);
+    }
+	});
+*/
+//	scroll one page at a time 
+/*
+	var divs = $('.itemHolder');
+    var dir = 'up'; // wheel scroll direction
+    var div = 0; // current div
+    $(document.body).on('DOMMouseScroll mousewheel', function (e) {
+        if (e.originalEvent.detail > 0 || e.originalEvent.wheelDelta < 0) {
+            dir = 'down';
+        } else {
+            dir = 'up';
+        }
+        // find currently visible div :
+        div = -1;
+        divs.each(function(i){
+            if (div<0 && ($(this).offset().top >= $(window).scrollTop())) {
+                div = i;
+            }
+        });
+        if (dir == 'up' && div > 0) {
+            div--;
+        }
+        if (dir == 'down' && div < divs.length) {
+            div++;
+        }
+        //console.log(div, dir, divs.length);
+        $('html,body').stop().animate({
+            scrollTop: divs.eq(div).offset().top
+        }, 500);
+        return false;
+    });
+    $(window).resize(function () {
+        $('html,body').scrollTop(divs.eq(div).offset().top);
+    });
+*/
+	
+	
+  </script>
+</body>
+
+</html>

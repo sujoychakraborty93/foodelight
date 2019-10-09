@@ -1,0 +1,1368 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	font-family: p22-underground, arial;
+	width: 100%;
+}
+
+.container-fluid {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+.contain {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+#containDiv {
+	background: url('images/home_back_1.jpg');
+	background-attachment: fixed;
+	background-size: cover;	
+}
+
+.clear {
+    clear:both;
+}
+
+#menubar {
+	background-color: rgb(10, 10, 10);
+	background-color: rgba(10, 10, 10, 0.4);
+	height: 40px;
+	width: 100%;
+	
+	position: fixed;
+	top: 0;
+	right:0;
+	left:0;
+	z-index:100;
+	color: white;
+	width: 100%;
+}
+
+#topul {
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    list-style-type: none;
+    float: right;
+    margin-right: 20px;
+    padding-top: 10px;
+    
+}
+
+.topli {
+    display: inline-block;
+    position: relative;
+}
+.toplibtn {
+    color: white;
+    font-family: arial;
+    background-color: Transparent;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    padding: 12px;
+    padding-bottom: 12.4px;
+	border-radius: 3px;
+}
+
+.toplibtn:hover {
+    background-color:  rgb(100, 100, 100);
+    color: white;
+    text-decoration: none;
+}
+
+.topli:hover .toplibtn {
+    background-color: rgb(100, 100, 100);
+}
+
+.headerQuote {
+	width: 52%;
+	height: 200px;
+	background-color: rgb(190, 190, 190);
+	background-color: rgba(190, 190, 190, 0.4);
+	margin-top: 18%;
+	padding: 10px;
+}
+
+#h1Quote{
+	font-size: 5em;
+	font-weight: 600;
+	/*color: rgb(255, 255, 255); */
+	color: white;
+	border: 3px solid black;
+	padding: 48px;
+	margin: 0;
+	letter-spacing: 4px;
+}
+
+.midSection {
+	min-height: 500px;
+	background-color: white;
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.asd {
+	margin-top: 80px;
+	width: 50%;
+	letter-spacing: 5px;
+}
+.asd h2{
+	font-weight: 600;
+	text-align: justify;
+}
+.asd h4 {
+	float: right;
+	letter-spacing: 4px;
+	font-weight: 600;
+}
+.asd h3 {
+	letter-spacing: 3px;
+	font-weight: 100;
+	text-align: justify;
+}
+
+#kitchDiv {
+	background: url('images/kitchen_back_1.jpg') no-repeat center center fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	padding-top: 130px;
+}
+
+.kitBox {
+	width: 52%;
+	height: 400px;
+	background-color: rgba(10, 10, 10, 0.7);	
+	border: 8px solid rgba(222,3,0,0.9);
+	border-radius: 5px;
+	position: absolute;
+	text-align: center;
+	color: white;
+}
+
+.sectionHeaderh1 {
+	font-size: 80px;
+	font-family: 'Bellefair', serif;
+	letter-spacing: 2px;
+	margin-bottom: 30px;
+/*	font-family: 'Krona One', sans-serif;
+/*	font-family: "Avenir Next Regular",sans-serif; */
+}
+
+.kitCircleDiv {
+	width: 120px;
+    height: 120px;
+    margin: 0 auto;
+	border-radius: 100%;
+	background-color: transparent;
+}
+
+.kitCircle {
+	border: 8px solid rgba(0,183,229,0.9);  
+/*    border: 8px solid rgba(222,3,9,0.9); */
+    opacity: .9;
+    border-right: 5px solid rgba(0,0,0,0);
+    border-left: 5px solid rgba(0,0,0,0);
+    border-radius: 100%;
+/*    box-shadow: 0 0 35px #2187e7; */
+	box-shadow: 0 0 35px #ffffff;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    -moz-animation: spinPulse 1s infinite normal ease-in-out;
+    -webkit-animation: spinPulse 1s infinite normal linear;
+	animation-name: spinPulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+	animation-timing-function: ease-in-out;
+}
+
+@-moz-keyframes spinPulse {
+    0% {
+        -moz-transform: rotate(160deg);
+        opacity: 0;
+        box-shadow: 0 0 1px #2187e7;
+    }
+
+    50% {
+        -moz-transform: rotate(145deg);
+        opacity: 1;
+    }
+
+    100% {
+        -moz-transform: rotate(-320deg);
+        opacity: 0;
+    };
+}
+
+@-webkit-keyframes spinPulse {
+    0% {
+        -webkit-transform: rotate(160deg);
+        opacity: 0;
+        box-shadow: 0 0 1px #2187e7;
+    }
+
+    50% {
+        -webkit-transform: rotate(145deg);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: rotate(-320deg);
+        opacity: 0;
+    };
+}
+
+@keyframes spinPulse {
+    0% {
+        -webkit-transform: rotate(160deg);
+        opacity: 0;
+        box-shadow: 0 0 1px #2187e7;
+    }
+
+    50% {
+        -webkit-transform: rotate(145deg);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: rotate(-320deg);
+        opacity: 0;
+    };
+}
+
+.kitCircle:hover {
+	background-color: rgba(200, 200, 200, 0.5);
+	cursor: pointer;
+	animation-duration: 2s;
+	-moz-animation-duration: 2s;
+	-webkit-animation-duration: 2s;
+}
+
+#kitCircleBtnDiv {
+	margin: 0 auto;
+	text-align: center;
+	margin-top: -110px;
+	color: red;
+}
+
+#kitCircleBtn {
+	font-size: 98px;
+}
+
+#kith2 {
+	margin-top: 50px;
+	font-family: 'Bellefair', serif;
+	letter-spacing: 2px;
+}
+
+.testimonialQuote {
+	font-family: 'Bellefair', serif;
+	font-size: 25px;
+	display: inline-block;
+	margin-bottom: 30px;
+}
+
+.testimonialQuote div {
+	text-align: left;
+}
+
+#testQuoteLeft {
+	border-right: 2px solid gray;
+	padding-right: 10%;
+}
+
+#testQuoteRight {
+	padding-left: 10%;
+}
+
+.testimonialCustomer {
+	float: right;
+}
+
+.viewMoreDiv {
+	border: 2px solid black;
+	margin: 0 auto;
+	width: 150px;
+	height: 50px;
+}
+.viewMoreAnchor {
+	text-decoration: none;
+	color: black;
+	background-color: Transparent;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+.viewMoreAnchor:hover {
+	background-color: Transparent;
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+}
+.viewMore {	
+	width: 99.5%;
+	height: 99.5%;
+	padding: 10px;
+	margin-left: 0.25%;
+	margin-top: 0.25%;
+}
+.viewMore:hover {
+	background-color: gray;
+}
+.viewMore p {
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+
+#contactDiv {
+	background: url('images/contact_background_1.jpg') no-repeat center center fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	width: 100%;
+}
+
+.sectionWrap {
+	color: white;
+	text-align: center;
+	background-color: rgba(10,10,10,0.6);
+	position: relative;
+	padding-top: 70px;
+}
+
+.contactSubSection {
+	margin-top: 50px;
+}
+
+.contactPartition {
+	display: inline-block;
+}
+
+#contactPartLeft {
+	border-right: 2px solid white;
+	
+}
+#contactPartLeft div {
+	float: right;
+	padding-top: 9%;
+	margin-bottom: 7%;
+	text-align: right;
+	color: white;
+	font-family: 'Bellefair', serif;
+	letter-spacing: 2px;
+}
+#contactPartRight div {
+	float: left;
+}
+
+.fa {
+    padding: 8px;
+    font-size: 16px;
+    width: 32px;
+	border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+	margin-bottom: 5px;
+}
+/* Set a specific color for each brand */
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.niveSocialIcon:hover {
+	opacity: 0.4;
+	color: white;
+	text-decoration: none;
+}
+
+.shareIt {
+	width: 40%;
+	height: 10%;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+.shareIt h6 {
+	color: white;
+	font-family: 'Bellefair', serif;
+	letter-spacing: 3px;
+}
+
+.shareIconClass {
+	background-color: white;
+	color: black;
+	border-radius: 100%;	
+	-webkit-transition: background-color 1s ease;
+    -moz-transition: background-color 1s ease;
+    -o-transition: background-color 1s ease;
+    transition: background-color 1s ease;
+}
+.shareIconClass:hover {
+	background-color: black;
+	color: white;
+	text-decoration: none;
+}
+
+.footer {
+	text-align: center;
+	color: rgba(150, 150, 150, 1);
+	margin: 0 auto;
+	margin-top: 50px;
+	font-style: italic;
+	font-family: 'Bellefair', sans-serif;
+	letter-spacing: 1px;
+}
+
+.hrClass {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgba(100, 100, 100, 1);
+	/*for IE7+*/
+	color: rgba(100, 100, 100, 1);
+	/*for Firefox and Opera*/
+	background-color: rgba(100, 100, 100, 1);
+}
+
+.footer p {
+	margin: 0;
+}
+
+.sujoySocialIcon {
+	padding: 0px;
+    font-size: 24px;
+    width: 30px;
+	border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.sujoySocialIconHover {
+	width: 50px;
+	font-size: 44px;
+	margin-top: -20px;
+	color: silver;
+}
+
+.iconHoverText {
+	display: none;
+	margin-top: -70px;
+	margin-left: -50px;
+	font-size: 14px;
+	color: black;
+	position: absolute;
+	border-radius: 5px;
+	background-color: white;
+	padding: 4px;
+}
+
+.sujoySocialIcon:hover .iconHoverText {
+	display: block;
+}
+
+/*
+===================================== Kitchen.html starts here===============================
+*/
+
+#kitchenDiv {
+	background: url('images/kitch_back_1.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+.kitchenWrap {
+	color: white;
+	text-align: center;
+	background-color: rgba(10,10,10,0.6); 
+	position: absolute;
+	padding-top: 70px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.kitchenHeaderH1Div {
+	margin-top: 10%;
+	background-color: red;
+	padding: 0;
+	position: relative;
+	-webkit-animation-name: slideLeft;  
+    -webkit-animation-duration: 3s;     
+    -webkit-animation-fill-mode: forwards; 
+	-moz-animation-name: slideLeft;  
+    -moz-animation-duration: 3s;     
+    -moz-animation-fill-mode: forwards;
+    animation-name: slideLeft;
+    animation-duration: 3s;    
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes slideLeft {
+    from {margin-left: 100%;}
+    to {margin-left: 25%;}
+}
+
+@-moz-keyframes slideLeft {
+    from {margin-left: 100%;}
+    to {margin-left: 25%;}
+}
+
+@keyframes slideLeft {
+    from {margin-left: 100%;}
+    to {margin-left: 25%;}
+}
+
+.kitchenHeaderH1Div2 {
+	margin-top: 10%;
+	background-color: green;
+	padding: 0;
+	position: relative;
+	-webkit-animation-name: slideRight;  
+    -webkit-animation-duration: 3s;   
+    -webkit-animation-fill-mode: forwards;
+	-moz-animation-name: slideRight;  
+    -moz-animation-duration: 3s;   
+    -moz-animation-fill-mode: forwards; 
+    animation-name: slideRight;
+    animation-duration: 3s;    
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes slideRight {
+    from {margin-right: 100%;}
+    to {margin-right: 25%;}
+}
+
+@-moz-keyframes slideRight {
+    from {margin-right: 100%;}
+    to {margin-right: 25%;}
+}
+
+@keyframes slideRight {
+    from {margin-right: 100%;}
+    to {margin-right: 25%;}
+}
+
+
+.dishesDisplayLine {
+	margin-top: 9px;
+	margin-left: 10%;
+	margin-right: 10%;
+	height: 180px;
+	background-color: white;
+}
+
+.dishesBox {
+	display: inline-block;
+	width: 49%;
+	height: 100%;
+	background-color: rgb(240, 240, 240);
+	margin-right: 5px;
+	padding: 0px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+/*
+.dishesBox a {
+	background-color: red;
+	vertical-align:text-top;
+}
+*/
+
+.dishPicHolder {
+	overflow: hidden;
+	display: inline-block;
+	width: 60%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	border-radius: 5px;
+}
+
+.dishDisplayPic {
+	width: 100%;
+	height: 100%;
+}
+
+.dishDisplayName {
+	vertical-align:top;
+	margin-top: 13%;
+	width: 39%;
+	display: inline-block;
+	text-align: center;
+	
+	font-family:serif;
+	font-style: italic;
+	font-weight: 600;
+	color: rgb(150, 150, 150);
+}
+/*	font-variant: small-caps; */
+
+.dishPicShade {
+	width: 100%;
+	height: 100%;
+	background-color: Transparent;
+}
+
+.dishesBox a:hover .dishDisplayName {
+	text-decoration: none;
+	color: black;
+}
+
+
+.dishesBox a:hover .dishDisplayPic {
+	-webkit-animation-name: enlarge;  
+    -webkit-animation-duration: 3s;   
+    -webkit-animation-fill-mode: forwards;
+	-moz-animation-name: enlarge;  
+    -moz-animation-duration: 3s;   
+    -moz-animation-fill-mode: forwards; 
+    animation-name: enlarge;
+    animation-duration: 3s;    
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes enlarge {
+    from {height: 100%; width: 100%;}
+    to {height: 110%; width: 110%;}
+}
+@-moz-keyframes enlarge {
+    from {height: 100%; width: 100%;}
+    to {height: 110%; width: 110%;}
+}
+@-keyframes enlarge {
+    from {height: 100%; width: 100%;}
+    to {height: 110%; width: 110%;}
+}
+
+.dishesBox a:hover .dishPicShade {
+	-webkit-animation-name: shadeOn;  
+    -webkit-animation-duration: 1s;   
+    -webkit-animation-fill-mode: forwards;
+	-moz-animation-name: shadeOn;  
+    -moz-animation-duration: 1s;   
+    -moz-animation-fill-mode: forwards; 
+    animation-name: shadeOn;
+    animation-duration: 1s;    
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes shadeOn {
+    from {background-color: Transparent;}
+    to {background-color: rgba(10, 10, 10, 0.5);}
+}
+@-moz-keyframes shadeOn {
+    from {background-color: Transparent;}
+    to {background-color: rgba(10, 10, 10, 0.5);}
+}
+@keyframes shadeOn {
+    from {background-color: Transparent;}
+    to {background-color: rgba(10, 10, 10, 0.5);}
+}
+
+.fleft {
+	float: left;
+}
+.fright {
+	float: right;
+}
+.tleft {
+	text-align: left;
+}
+.tright {
+	text-align: right;
+}
+
+#chickenPatiyala1 {
+	background: url('images/chickenPatiyala1.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#chickenFryJalapeno1 {
+	background: url('images/chickenFryJalapeno1.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#arbiGhoshtPolaoChicken2 {
+	background: url('images/arbiGhoshtPolaoChicken2.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#murgMusallam2 {
+	background: url('images/murgMusallam2.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#cheloKabab3 {
+	background: url('images/cheloKabab3.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#chickenBirdNest {
+	background: url('images/chickenBirdNest.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#islishPaturi {
+	background: url('images/islishPaturi.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#ilishAnarosh2 {
+	background: url('images/ilishAnarosh2.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#daabChingri {
+	background: url('images/daabChingri.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#eggPaties2 {
+	background: url('images/eggPaties2.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#reshmiKabab1 {
+	background: url('images/reshmiKabab1.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#chickenBurger {
+	background: url('images/chickenBurger.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#paneerPaturi2 {
+	background: url('images/paneerPaturi2.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#karaishutiKochuri3 {
+	background: url('images/karaishutiKochuri3.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#hingKochuri {
+	background: url('images/hingKochuri.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#masalaDosa3 {
+	background: url('images/masalaDosa3.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#idliSambar {
+	background: url('images/idliSambar.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#vanillaCakeWithStrawberry {
+	background: url('images/vanillaCakeWithStrawberry.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#marbleCake {
+	background: url('images/marbleCake.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#mangoCheesecake1 {
+	background: url('images/mangoCheesecake1.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#cake {
+	background: url('images/cake.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#chocCheeseCake {
+	background: url('images/chocCheeseCake.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#mangoLassi3 {
+	background: url('images/mangoLassi3.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#aamPatishapta3 {
+	background: url('images/aamPatishapta3.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#rabri1 {
+	background: url('images/rabri1.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#malpoa {
+	background: url('images/malpoa.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#icecreamSondesh1 {
+	background: url('images/icecreamSondesh1.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#icecreamFudge2 {
+	background: url('images/icecreamFudge2.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+/*
+==================================================== Kitchen items details page starts here ================================================================
+*/
+
+.itemHolder {
+	margin-top: 70px;
+	margin-bottom: 100px;
+	margin-left: 6%;
+	box-shadow: 1px 1px 0px grey;
+	padding: 0px;
+	width: 86%;
+	-webkit-transition: width 1s, height 4s, box-shadow 1s, margin-left 1s; /* For Safari 3.1 to 6.0 */
+	-moz-transition: width 1s, height 4s, box-shadow 1s, margin-left 1s; /* For Safari 3.1 to 6.0 */
+    transition: width 1s, height 4s, box-shadow 1s, margin-left 1s;
+}
+.itemHolder:hover {
+	box-shadow: 20px 20px 30px gray;
+	
+	width: 88%;
+	margin-left: 5%;
+	
+}
+
+.itemPicFrame {
+	display: inline-block;
+	width: 70%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 1%;
+	padding-bottom: 0px;
+	background-color: rgb(240, 240, 240);
+}
+
+.itemPicHolder {
+	width: 100%;
+	height: 100%;	
+	overflow: hidden;
+}
+.itemPicBox {
+	width: 102%;
+	height: 100%;
+	overflow:auto;
+}
+
+.itemPic {
+	width: 100%;
+	min-height: 98%;
+	margin-bottom: 2%;
+}
+
+.itemDetails {
+	display: inline-block;
+	height: 98%;
+	width: 25%;
+	vertical-align: top;
+	margin-left: 2%;
+	
+
+}
+.itemHeader {
+	margin-top: 15%;
+	text-align: center;
+	font-family: 'Bellefair', serif;
+	font-size: 30px;
+	letter-spacing: 0.4px;
+}
+
+.itemDescription {
+	margin-top: 10%;
+	height: 60%;
+	width: 100%;	
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.itemDescArticle {
+	margin-top: 5%;
+	height: 92%;
+	width: 100%;
+	text-align: justify;
+	overflow: auto;
+	font-family: 'Bellefair', serif, Arial Narrow, courier, monospace;
+	font-size: 18px;
+	letter-spacing: 0px;
+	line-height: 30px;
+}
+/* For IE */
+.itemDescArticle {
+    -ms-overflow-style: none;
+}
+/* For Webkit browsers like Chrome, Safari */
+.itemDescArticle::-webkit-scrollbar { 
+    display: none;
+}
+@-moz-document url-prefix() {
+    .itemDescArticle { overflow: auto; }
+}
+
+#chickenPatiyala2 {
+	background: url('images/chickenPatiyala2.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#chickenFryJalapeno2 {
+	background: url('images/chickenFryJalapeno2.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#chickenFryJalapeno3 {
+	background: url('images/chickenFryJalapeno3.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#arbiGhoshtPolaoChicken {
+	background: url('images/arbiGhoshtPolaoChicken.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#murgMusallam1 {
+	background: url('images/murgMusallam1.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+#murgMusallam2 {
+	background: url('images/murgMusallam2.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#cheloKabab1 {
+	background: url('images/cheloKabab1.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+#cheloKabab2 {
+	background: url('images/cheloKabab2.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+#chickenBirdNest2 {
+	background: url('images/chickenBirdNest2.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#ilishAnarosh1 {
+	background: url('images/ilishAnarosh1.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+#eggPaties1 {
+	background: url('images/eggPaties1.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+#eggPaties3 {
+	background: url('images/eggPaties3.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+#reshmiKabab2 {
+	background: url('images/reshmiKabab2.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+#karaishutiKochuri1 {
+	background: url('images/karaishutiKochuri1.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#karaishutiKochuri2 {
+	background: url('images/karaishutiKochuri2.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+#masalaDosa1 {
+	background: url('images/masalaDosa1.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#masalaDosa2 {
+	background: url('images/masalaDosa2.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#paneerPaturi1 {
+	background: url('images/paneerPaturi1.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#paneerPaturi3 {
+	background: url('images/paneerPaturi3.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#mangoCheesecake2 {
+	background: url('images/mangoCheesecake2.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#chocCheeseCake {
+	background: url('images/chocCheeseCake.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#chocCheeseCake2 {
+	background: url('images/chocCheeseCake2.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+
+#rabri2 {
+	background: url('images/rabri2.jpg') no-repeat center;
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#mangoLassi1 {
+	background: url('images/mangoLassi1.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#mangoLassi2 {
+	background: url('images/mangoLassi2.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+
+#aamPatishapta1 {
+	background: url('images/aamPatishapta1.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#aamPatishapta2 {
+	background: url('images/aamPatishapta2.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#malpoa {
+	background: url('images/malpoa.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#icecreamSondesh3 {
+	background: url('images/icecreamSondesh3.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#icecreamSondesh2 {
+	background: url('images/icecreamSondesh2.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#icecreamFudge {
+	background: url('images/icecreamFudge.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+/*=========================================== Creations ========================================= */
+
+#creationsDiv {
+	background: url('images/creationsBack.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	text-align: center;
+	width: 100%;
+	height: 700px;
+	-webkit-transition: width 2s, height 2s, margin-left 2s; /* For Safari 3.1 to 6.0 */
+	-moz-transition: width 2s, height 1s, margin-left 2s; /* For Mozilla */
+    transition: width 2s, height 2s, margin-left 2s;
+}
+
+#creationsDiv:hover {
+	height: 710px;
+	width: 105%;
+	margin-left: -2%;	
+}
+
+.creationsHeader {
+	color: white;
+	text-align: center;
+	position: absolute;
+	margin-top: 20%;
+	margin-left: 27%;
+	width: 52%;
+	height: 10%;
+	font-size: 3em;
+	font-weight: 600;
+	/*color: rgb(255, 255, 255); */
+	color: white;
+	letter-spacing: 3px;
+}
+
+#radial {
+	background: url('images/radial.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#darkShelter {
+	background: url('images/darkShelter.jpg');
+	background-size: cover;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+/*=========================================== Creations ========================================= */
+
+#aboutDiv {
+	background-color: black;
+	width: 102%;
+	text-align: center;
+}
+
+.aboutMe {
+	width: 100%;
+	padding-top: 7%;
+}
+
+.aboutHeader {
+	color: white;
+	text-align: center;
+	margin-left: 20%;
+	width: 52%;
+	height: 10%;
+	font-size: 4em;
+	font-weight: 600;
+	color: white;
+	letter-spacing: 3px;
+}
+
+.aboutArticle {
+	color: white;
+	text-align: justify;
+	margin-top: 3%;
+	margin-left: 24%;
+	width: 50%;
+	font-size: 1.5em;
+	font-weight: 300;
+	color: white;
+	letter-spacing: 0.2px;
+	font-family: 'Bellefair', serif, Arial Narrow, courier, monospace;
+
+}
+
+
+
+
+
+
+
+
+
